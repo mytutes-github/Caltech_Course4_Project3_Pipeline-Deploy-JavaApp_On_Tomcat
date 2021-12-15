@@ -1,4 +1,4 @@
-currentBuild.displayName = "CI-CD_Workflow_#"+currentBuild.number
+currentBuild.displayName = "Course4Project3_CI-CD-Workflow_#"+currentBuild.number
 
 node {
     
@@ -21,6 +21,13 @@ node {
     stage('Maven Package') {
           
         sh "${mvnCMD} clean package"
+        
+    }
+
+
+    stage('Maven Test') {
+          
+        sh "${mvnCMD} test"
         
     }
     
