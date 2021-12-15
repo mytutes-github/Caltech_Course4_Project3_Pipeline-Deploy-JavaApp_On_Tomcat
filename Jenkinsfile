@@ -14,7 +14,7 @@ node {
     
     stage('Git Checkout') {
  
-        git credentialsId: 'SSH_Git-Jenkins', url: 'git@github.com:mytutes-github/Caltech_Course2_Project3_Jenkins-Pipeline.git'
+        git credentialsId: 'SSH_Git-Jenkins', url: 'git@github.com:mytutes-github/Caltech_Course4_Project3_Pipeline-Deploy-JavaApp_On_Tomcat.git'
 
     }
 
